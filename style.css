@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Helvetica", "PingFang SC", "Microsoft YaHei";
+
+  overflow-x: hidden;
+
+  background: rgba(0,0,0,.06);
+}
+
+.banner, .header {
+  height: 450px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 0 0 0 -40px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.shadow {
+  box-shadow: rgba(0,0,0,1) 0 0 80px inset;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px 40px 0 40px;
+  margin: -20px 0 0 -40px;
+
+  text-align: center;
+}
+
+.header .bg {
+  -webkit-filter: blur(5px) grayscale(1) brightness(.4);
+}
+
+.header .title {
+  font-size: 60px;
+  line-height: 60px;
+
+  font-style: italic;
+  display: inline-block;
+
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+
+  padding-bottom: 30px;
+  color: rgba(255,255,255,.87);
+}
+
+.subtitle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  line-height: 30px;
+  font-size: 24px;
+
+  color: rgba(255,255,255,.54);
+}
+
+.bg {
+  position: absolute;
+  top: -20px;
+  bottom: -20px; 
+  right: 0;
+  left: 0;
+
+  transition: -webkit-filter 1s ease;
+
+  -webkit-filter: blur(3px) grayscale(.6);
+
+  background-position: 50%;
+  background-size: cover;
+}
+
+.banner .brand {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+
+  line-height: 80px;
+  font-size: 72px;
+  text-shadow: rgba(0,0,0,.8) 2px 2px 1px, rgba(0,0,0,.6) 4px 4px 2px, rgba(0,0,0,.4) 6px 6px 3px;
+  color: rgba(255,255,255,.87);
+
+  font-style: italic;
+
+  transition: -webkit-filter 1s ease;
+
+  -webkit-filter: blur(0px);
+
+  position: relative;
+}
+
+.brand-content {
+  display: inline-block;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+.banner:hover .bg {
+  -webkit-filter: blur(0px);
+}
+
+.banner:hover .brand {
+  -webkit-filter: blur(5px) grayscale(0);
+}
+
+.content {
+  margin: 80px auto;
+  width: 800px;
+  font-size: 24px;
+  color: rgba(0,0,0,.7);
+  letter-spacing: 2px;
+  line-height: 32px;
+}
+
+.content.moto {
+  text-align: center;
+}
