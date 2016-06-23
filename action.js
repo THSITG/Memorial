@@ -1,8 +1,6 @@
 'use strict';
 
 function update(ev) {
-  console.log(ev);
-
   var hratio = ev.screenX / $(window).height();
   var wratio = ev.screenY / $(window).width();
 
